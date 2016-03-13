@@ -1,0 +1,79 @@
+<body class="new">
+  <a href="/index"><img class="logo" src="/images/logo.png"></a>
+
+  <div class="add_listing">
+    <form method="POST" action="/index">
+
+      <div class="add">
+        <h3 class="">Add a listing to the catalog:</h3>
+      </div>
+      
+      <div class="input_error">
+        <% if @user && @user.errors.any? %>
+          <div>
+            <strong> Some issues with your listing, please fix:</strong>
+            <ul>
+              <% @user.errors.full_messages.each do |error| %>
+                <li><%= error %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="form-group">
+        <label>DJ Name:</label>
+        <input class="form-control" type="text" name="dj_name" value="<%= @user && @user.dj_name %>">
+      </div>
+
+      <div class="form-group">
+        <label>Genre (max: 3):</label><br/>
+        <div class="checkboxes">
+          <label class="checkbox-inline">
+            <input type="checkbox" name="genre[]" value="Top 40"<%= (@user && @user.genre && @user.genre.include?("Top 40") && "checked") || "" %>>Top 40
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="genre[]" value="Electronic"<%= (@user && @user.genre && @user.genre.include?("Electronic") && "checked") || "" %>>Electronic
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="genre[]" value="Hip Hop"<%= (@user && @user.genre && @user.genre.include?("Hip Hop") && "checked") || "" %>>Hip Hop
+          </label><br/>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="genre[]" value="Latin"<%= (@user && @user.genre && @user.genre.include?("Latin") && "checked") || "" %>>Latin
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="genre[]" value="Pop"<%= (@user && @user.genre && @user.genre.include?("Pop") && "checked") || "" %>>Pop
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="genre[]" value="R&B"<%= (@user && @user.genre && @user.genre.include?("R&B") && "checked") || "" %>>R&B
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="genre[]" value="Rock"<%= (@user && @user.genre && @user.genre.include?("Rock") && "checked") || "" %>>Rock
+          </label>
+        </div>  
+      </div>
+
+      <div class="form-group">
+        <label>Bio (max: 140 char):</label>
+        <input class="form-control" type="text" name="bio" value="<%= @user && @user.bio %>">
+      </div>
+      
+      <div class="form-group">
+        <label>Venues:</label>
+        <input class="form-control" type="text" name="venues" value="<%= @user && @user.venues %>">
+<!--         <input class="form-control" type="text" name="venues" value="<%= @user && @user.venues %>">
+        <input class="form-control" type="text" name="venues" value="<%= @user && @user.venues %>"> -->
+      </div>
+      
+      <div class="form-group">
+        <label>URL:</label>
+        <input class="form-control" type="text" name="url" value="<%= @user && @user.url %>">
+      </div>
+      
+      <div class="save_button">
+        <input class="btn btn-default" type="submit" value="Save">
+      </div>
+    </form>
+
+  </div>
+</body>

@@ -1,0 +1,44 @@
+<body class="details">
+  <a href="/index"><img class="logo" src="/images/logo.png"></a>
+
+  <div class="show_details">
+    <div>
+      <h3 class="details_name"><stong><%= @user.dj_name %></stong></h3>
+        <hr/>
+        <h4>Bio:</h4>
+          <%= @user.bio %>
+        <h4>Genre:</h4>
+          <%= @user.genre %>
+        <h4>Venues:</h4>
+          <%= @user.venues %>
+        <h4>Website:</h4>
+          <div class="show_url">
+            <strong><a href="<%= @user.url %>"><%= @user.url %></a><strong>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <form class="submit_request">
+    <div class="booking_request">
+      <label>Booking Request:</label>
+    </div>
+    <div class="form-group">
+      <label>Date:</label>
+      <input class="form-control" type="text" placeholder="Date">
+    </div>
+    <div class="form-group">
+      <label>Location:</label>
+      <input class="form-control" type="text" placeholder="Location">
+    </div>
+    <div class="form-group">
+      <label>Contact Information:</label>
+      <input class="form-control" type="text" placeholder="Phone number / e-mail address">
+    </div>
+    <div class="save_button">
+      <input class="btn btn-default" value="Submit">
+    </div>
+  </form>
+
+</body>
+

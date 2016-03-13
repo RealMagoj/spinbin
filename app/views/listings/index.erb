@@ -1,0 +1,58 @@
+<body class="home">
+  <img class="logo" src="images/logo.png">
+  
+  <form class="login">
+
+    <div class="login_email">
+      <label><strong>Email</strong></label>
+        <div>
+          <input type="email" class="login_input" placeholder="Email">
+        </div>
+    </div>
+    
+    <div class="login_password">
+      <label><strong>Password</strong></label>
+        <div>
+          <input type="password" class="login_input" placeholder="Password">
+        </div>
+    </div>
+    
+    <div class="login_button">
+      <input class="btn btn-default" type="submit" value="Sign in">
+    </div>
+
+  </form>
+
+  <div class="users">
+    <% @users.each do |user| %>
+      <div class="user">
+        <a href="/index/<%= user.id %>"><%= user.dj_name %></a><br/>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="about">
+
+    <div class="about_title">
+      <label><strong>Welcome to SpinBin</strong></label>
+      
+      <div class="about_info">
+        
+        <p>
+          Browse through our catalog of DJs and click on a listing to view details including photo, bio, genre, venues they've spun at, listen to sample mixes, links to their official webpage and even fill out a request form to hire the DJ for a public or private event!
+        </p>
+        <p>
+          If you're a DJ, click Signup to create a profile and allow visitors to request your professional services. It's FREE, so what are you waiting for?
+        </p>
+        
+        <div class="login_button">
+          <a href="/new"> 
+          <input class="btn btn-default" type="submit" value="SIGN UP NOW"></a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>

@@ -1,0 +1,154 @@
+/*===================
+  Body
+===================*/
+.home {
+  background-size: 100% 100%;
+  background-image: url("../images/DJ.hand_.mixing.thinkstock.stock_.med_.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  margin-top: 5px;
+  margin-left: 5px;
+  float: left;
+}
+h3 {
+  margin: 0;
+}
+/*===================
+  Index
+===================*/
+.login {
+  border-radius: 5px;
+  float: left;
+  background-color: rgba(224, 199, 199, 0.7);
+  width: 350px;
+  padding: 5px;
+  margin-top: 100px;
+  margin-left: 25px;
+  color: #082E5D;
+}
+.login_input {
+  width: 295px;
+  height: 22px;
+}
+.login_email {
+  padding-bottom: 5px;
+  text-align: center;
+}
+.login_password {
+  padding-bottom: 5px;
+  text-align: center;
+}
+.login_button {
+  text-align: center;
+}
+.about {
+  float: right;
+  height: 325px;
+  border-radius: 5px;
+  background-color: rgba(224, 199, 199, 0.7);
+  width: 600px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  color: #082E5D;
+  text-align: center;
+  font-size: 26px;
+}
+.about_info {
+  font-size: 20px;
+}
+.users {
+  float: left;
+  clear: both;
+  margin-top: 33px;
+  margin-left: 130px;
+  margin-bottom: 25px;
+}
+.user {
+  color: #1396C2;
+  background-color: rgb(23, 27, 28);
+  border-radius: 5px;
+  margin-top:10px;
+  width: 550px;
+  padding: 10px;
+}
+/*===================
+  New
+===================*/
+.new {
+  background-size: 100% 100%;
+  background-image: url("../images/wallpaper-for-online-music.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.add_listing {
+  background-color: rgba(224, 199, 199, 0.7);
+  padding: 10px;
+  float: right;
+  margin-top: 75px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  width: 33.33%;
+}
+.add {
+  text-align: center;
+}
+.save_button {
+  text-align: center;
+}
+.checkboxes {
+  text-align: center;
+}
+/*===================
+  Details
+===================*/
+.details {
+  background-size: 100% 100%;
+  background-image: url("../images/dj-music-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.show_details {
+  display: inline-block;
+  background-color: rgba(224, 199, 199, 0.7);
+  border-radius: 5px;
+  color: #B3021F;
+  padding: 10px;
+  width: 350px;
+  height: 325px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 125px;
+  margin-bottom: 25px;
+}
+.details_name {
+  color: #1396C2;
+  font-weight: 900;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.submit_request {
+  display: inline-block;
+  background-color: rgba(224, 199, 199, 0.7);
+  padding: 10px;
+  float: right;
+  margin-top: 150px;
+  margin-right: 40px;
+  border-radius: 5px;
+  width: 30%;
+}
+.booking_request {
+  text-align: center;
+}
+.show_url {
+  font-size: 22px;
+  color: #B3021F;
+}
